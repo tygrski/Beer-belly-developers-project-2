@@ -10,7 +10,8 @@ async function addBar(event) {
             return response.json();
         })
         .then(barReturn => {
-            return fetch('/api/bar/' + barReturn.id, {
+             fetch('/api/bar/' + barReturn.id, {
+
                 method: 'POST',
                 body: JSON.stringify({
                     id: barReturn.id,
@@ -24,8 +25,6 @@ async function addBar(event) {
                     'Content-Type': 'application/json'
                 }
             })
-        })
-        .then(response => {
             return document.location.replace('/bar/' + barID);
         })
         .catch( err => {
