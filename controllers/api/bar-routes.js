@@ -65,11 +65,11 @@ router.post("/:bar", (req, res) => {
     ],
     defaults: {
       id: req.body.id,
-      name: req.body.name,
-      brewery_type: req.body.brewery_type,
-      street: req.body.street,
-      phone: req.body.phone,
-      website_url: req.body.website_url
+      // name: req.body.name,
+      // brewery_type: req.body.brewery_type,
+      // street: req.body.street,
+      // phone: req.body.phone,
+      // website_url: req.body.website_url
     }
   })
     .then(barPostData => {
