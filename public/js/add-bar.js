@@ -15,11 +15,11 @@ async function addBar(event) {
                 method: 'POST',
                 body: JSON.stringify({
                     id: barReturn.id,
-                    // name: barReturn.name,
-                    // brewery_type: barReturn.brewery_type,
-                    // street: barReturn.street,
-                    // phone: barReturn.phone,
-                    // website_url: barReturn.website_url
+                    name: barReturn.name,
+                    brewery_type: barReturn.brewery_type,
+                    street: barReturn.street,
+                    phone: barReturn.phone,
+                    website_url: barReturn.website_url
                 }),
                 headers: {
                     'Content-Type': 'application/json'
